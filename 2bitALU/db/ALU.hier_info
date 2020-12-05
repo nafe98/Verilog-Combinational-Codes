@@ -1,0 +1,25 @@
+|ALU
+A[0] => Y~4.IN0
+A[0] => Y~2.IN0
+A[0] => Y~0.IN0
+A[0] => Add0.IN2
+A[1] => Y~5.IN0
+A[1] => Y~3.IN0
+A[1] => Y~1.IN0
+A[1] => Add0.IN1
+B[0] => Y~4.IN1
+B[0] => Y~2.IN1
+B[0] => Y~0.IN1
+B[0] => Add0.IN4
+B[1] => Y~5.IN1
+B[1] => Y~3.IN1
+B[1] => Y~1.IN1
+B[1] => Add0.IN3
+S[0] => Mux1.IN5
+S[0] => Mux0.IN5
+S[1] => Mux1.IN4
+S[1] => Mux0.IN4
+Y[0] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,14 @@
+module ALU(A,B,S,Y);
+input [1:0]A,B,S;
+output reg [1:0]Y;
+
+always@*
+begin
+case(S)
+2'b00:Y=A+B;
+2'b00:Y=A&B;
+2'b00:Y=A|B;
+2'b00:Y=A^B;
+endcase
+end
+endmodule
