@@ -1,0 +1,69 @@
+|Ad_sub_4bit
+a[0] => a[0]~3.IN1
+a[1] => a[1]~2.IN1
+a[2] => a[2]~1.IN1
+a[3] => a[3]~0.IN1
+b[0] => ~NO_FANOUT~
+b[1] => ~NO_FANOUT~
+b[2] => ~NO_FANOUT~
+b[3] => ~NO_FANOUT~
+sel => sel~0.IN1
+CB <= full_adder:fa4.port3
+r[0] <= full_adder:fa1.port4
+r[1] <= full_adder:fa2.port4
+r[2] <= full_adder:fa3.port4
+r[3] <= full_adder:fa4.port4
+
+
+|Ad_sub_4bit|full_adder:fa1
+X => C~1.IN1
+X => S~0.IN1
+Y => C~2.IN0
+Y => C~0.IN0
+Y => S~0.IN0
+Z => C~2.IN1
+Z => C~0.IN1
+Z => S~1.IN0
+C <= C~3.DB_MAX_OUTPUT_PORT_TYPE
+S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Ad_sub_4bit|full_adder:fa2
+X => C~1.IN1
+X => S~0.IN1
+Y => C~2.IN0
+Y => C~0.IN0
+Y => S~0.IN0
+Z => C~2.IN1
+Z => C~0.IN1
+Z => S~1.IN0
+C <= C~3.DB_MAX_OUTPUT_PORT_TYPE
+S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Ad_sub_4bit|full_adder:fa3
+X => C~1.IN1
+X => S~0.IN1
+Y => C~2.IN0
+Y => C~0.IN0
+Y => S~0.IN0
+Z => C~2.IN1
+Z => C~0.IN1
+Z => S~1.IN0
+C <= C~3.DB_MAX_OUTPUT_PORT_TYPE
+S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Ad_sub_4bit|full_adder:fa4
+X => C~1.IN1
+X => S~0.IN1
+Y => C~2.IN0
+Y => C~0.IN0
+Y => S~0.IN0
+Z => C~2.IN1
+Z => C~0.IN1
+Z => S~1.IN0
+C <= C~3.DB_MAX_OUTPUT_PORT_TYPE
+S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
