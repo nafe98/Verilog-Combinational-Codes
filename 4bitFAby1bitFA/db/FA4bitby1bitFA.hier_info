@@ -1,0 +1,69 @@
+|FA4bitby1bitFA
+A[0] => A[0]~3.IN1
+A[1] => A[1]~2.IN1
+A[2] => A[2]~1.IN1
+A[3] => A[3]~0.IN1
+B[0] => B[0]~3.IN1
+B[1] => B[1]~2.IN1
+B[2] => B[2]~1.IN1
+B[3] => B[3]~0.IN1
+Ci => Ci~0.IN1
+Co <= fa:four.port3
+S[0] <= fa:one.port4
+S[1] <= fa:two.port4
+S[2] <= fa:three.port4
+S[3] <= fa:four.port4
+
+
+|FA4bitby1bitFA|fa:one
+X => C~1.IN1
+X => S~0.IN1
+Y => C~2.IN0
+Y => C~0.IN0
+Y => S~0.IN0
+Z => C~2.IN1
+Z => C~0.IN1
+Z => S~1.IN0
+C <= C~3.DB_MAX_OUTPUT_PORT_TYPE
+S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FA4bitby1bitFA|fa:two
+X => C~1.IN1
+X => S~0.IN1
+Y => C~2.IN0
+Y => C~0.IN0
+Y => S~0.IN0
+Z => C~2.IN1
+Z => C~0.IN1
+Z => S~1.IN0
+C <= C~3.DB_MAX_OUTPUT_PORT_TYPE
+S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FA4bitby1bitFA|fa:three
+X => C~1.IN1
+X => S~0.IN1
+Y => C~2.IN0
+Y => C~0.IN0
+Y => S~0.IN0
+Z => C~2.IN1
+Z => C~0.IN1
+Z => S~1.IN0
+C <= C~3.DB_MAX_OUTPUT_PORT_TYPE
+S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FA4bitby1bitFA|fa:four
+X => C~1.IN1
+X => S~0.IN1
+Y => C~2.IN0
+Y => C~0.IN0
+Y => S~0.IN0
+Z => C~2.IN1
+Z => C~0.IN1
+Z => S~1.IN0
+C <= C~3.DB_MAX_OUTPUT_PORT_TYPE
+S <= S~1.DB_MAX_OUTPUT_PORT_TYPE
+
+
