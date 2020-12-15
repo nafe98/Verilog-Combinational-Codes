@@ -1,0 +1,54 @@
+|mux81by41
+I[0] => I[0]~7.IN1
+I[1] => I[1]~6.IN1
+I[2] => I[2]~5.IN1
+I[3] => I[3]~4.IN1
+I[4] => I[4]~3.IN1
+I[5] => I[5]~2.IN1
+I[6] => I[6]~1.IN1
+I[7] => I[7]~0.IN1
+S0 => S0~0.IN2
+S1 => S1~0.IN2
+S2 => S2~0.IN1
+Y <= mux21:f3.port3
+
+
+|mux81by41|mux41:f1
+i0 => y~3.DATAB
+i1 => y~2.DATAB
+i2 => y~1.DATAB
+i3 => y~0.DATAB
+s0 => always0~3.IN0
+s0 => always0~1.IN0
+s0 => always0~0.IN0
+s0 => always0~2.IN0
+s1 => always0~3.IN1
+s1 => always0~2.IN1
+s1 => always0~0.IN1
+s1 => always0~1.IN1
+y <= y~3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux81by41|mux41:f2
+i0 => y~3.DATAB
+i1 => y~2.DATAB
+i2 => y~1.DATAB
+i3 => y~0.DATAB
+s0 => always0~3.IN0
+s0 => always0~1.IN0
+s0 => always0~0.IN0
+s0 => always0~2.IN0
+s1 => always0~3.IN1
+s1 => always0~2.IN1
+s1 => always0~0.IN1
+s1 => always0~1.IN1
+y <= y~3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux81by41|mux21:f3
+i0 => y~0.DATAB
+i1 => y~0.DATAA
+s => y~0.OUTPUTSELECT
+y <= y~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
