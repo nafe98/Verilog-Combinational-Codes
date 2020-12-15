@@ -1,0 +1,31 @@
+|xm
+W[0] => W[0]~3.IN1
+W[1] => W[1]~2.IN1
+W[2] => W[2]~1.IN1
+W[3] => W[3]~0.IN1
+S[0] => S[0]~1.IN2
+S[1] => S[1]~0.IN1
+F <= mux_21:three.port3
+
+
+|xm|mux_21:one
+i1 => f~0.DATAB
+i2 => f~0.DATAA
+s => f~0.OUTPUTSELECT
+f <= f~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|xm|mux_21:two
+i1 => f~0.DATAB
+i2 => f~0.DATAA
+s => f~0.OUTPUTSELECT
+f <= f~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|xm|mux_21:three
+i1 => f~0.DATAB
+i2 => f~0.DATAA
+s => f~0.OUTPUTSELECT
+f <= f~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
